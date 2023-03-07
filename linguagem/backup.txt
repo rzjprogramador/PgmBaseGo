@@ -60,29 +60,7 @@ type Modos struct {
 // Props Fixas
 
 
-// Objs para PropsFixas Universal
-var SignificadoVariavel = "Local de amazenamento de valor na memoria... representado por um nome unico. "
-var SinonimosVariavel = []string{"recipiente", "local_na_memoria", "link_para_valor", "referencia"}
-var PularLinhaModoUniversal = Modos{
-	Conceito: `com clausula \n dentro da mesma string pula a linha.`,
-	Exemplo: `String pularLinha = "linha1\nLinha2\nlinha3";`,
-}
-var Interpolar_Variavel_Em_Texto_Universal = Modos{
-	Conceito: "insira a string dentro de aspas apos o fechamento insira o sinal d e+ e a variavelDesejada",
-	Exemplo: `"O valor da variavel interpolada é >> " + varFoo;`,
-}
 
-var Interpolar_ObjetoFuncao_Em_Texto_Universal = Modos{
-	Conceito: `insira a string dentro de aspas apos o fechamento insira o sinal d e+ e a variavelDesejada.campo`,
-	Exemplo: `const textoComObjeto = "meu texto2" + obj.chave1;`,
-}
-
-var Caracteres_Especiais_Universal = []string{"#TODO"}
-
-var EscaparCaracteresEspeciaisEDeConflito_Universal = Modos{
-	Conceito: `insira 1 barra invertida antes do caractere especial, obs: mesmo se o caractere especial for uma barra`,
-	Exemplo: `\caractereEspecial`,
-}
 
 
 // LINGUAGEM DART
@@ -110,9 +88,7 @@ var LinguagemDart = Linguagem{
 		AspasAceitasEmString: "dupla",
 		AspasAceitasEmCaractereUnico: "simples",
 	},
-	Descobertas: Descobertas{
-		DescobrirValorViaConsole: `variavel.runtimeType`,
-	},
+
 
 	TiposDeDados: TiposDeDados{
 		TipoPrimitivo{
@@ -177,7 +153,7 @@ ANOTACOES TODO
 ***************************************************
 TIPO OBJETO EM DART:
 CriarNOvo: 
-Conceito: criar seapradamente variaveis para cada campo, tipar na variavel que vai representa-lo tipar como Object e atribuir as variaveis criadas a cada campo.
+Conceito: criar separadamente variaveis para cada campo, tipar na variavel que vai representa-lo tipar como Object e atribuir as variaveis criadas a cada campo.
 Exemplo: `
 var nome = 'rei';
   var numero = 10;

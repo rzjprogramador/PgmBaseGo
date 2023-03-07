@@ -52,3 +52,36 @@ var ConceitosBasePgm_Obj = ConceitosBasePgm{
 
 
 }
+
+/*
+
+TODO USAR BASES
+
+// Objs para PropsFixas Universal
+var SignificadoVariavel = "Local de amazenamento de valor na memoria... representado por um nome unico. "
+
+var SinonimosVariavel = []string{"recipiente", "local_na_memoria", "link_para_valor", "referencia"}
+
+var PularLinhaModoUniversal = Modos{
+	Conceito: `com clausula \n dentro da mesma string pula a linha.`,
+	Exemplo: `String pularLinha = "linha1\nLinha2\nlinha3";`,
+}
+
+var Interpolar_Variavel_Em_Texto_Universal = Modos{
+	Conceito: "insira a string dentro de aspas apos o fechamento insira o sinal d e+ e a variavelDesejada",
+	Exemplo: `"O valor da variavel interpolada é >> " + varFoo;`,
+}
+
+var Interpolar_ObjetoFuncao_Em_Texto_Universal = Modos{
+	Conceito: `insira a string dentro de aspas apos o fechamento insira o sinal d e+ e a variavelDesejada.campo`,
+	Exemplo: `const textoComObjeto = "meu texto2" + obj.chave1;`,
+}
+
+var Caracteres_Especiais_Universal = []string{"#TODO"}
+
+var EscaparCaracteresEspeciaisEDeConflito_Universal = Modos{
+	Conceito: `insira 1 barra invertida antes do caractere especial, obs: mesmo se o caractere especial for uma barra`,
+	Exemplo: `\caractereEspecial`,
+}
+
+*/

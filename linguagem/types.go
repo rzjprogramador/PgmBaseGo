@@ -2,13 +2,19 @@ package linguagem
 
 type Linguagem struct{
 	Nome string
-	EntradaSaidaDadosByLinguagem
-	TiposDeDados
-	RegrasDaLinguagem
 	Arquivos
 	ComandosDeSaida
+	EntradaSaidaDadosByLinguagem
+	RegrasDaLinguagem
+	TiposDeDados
 	Variaveis
-	Descobertas
+}
+
+type Arquivos struct {
+	RodarArquivo string
+}
+type ComandosDeSaida struct {
+	ViaConsole string
 }
 
 type EntradaSaidaDadosByLinguagem struct{
@@ -17,17 +23,21 @@ type EntradaSaidaDadosByLinguagem struct{
 }
 
 type TiposDeDados struct {
-	Conceito string
+	OrigemTiposDaLinguagem string
+	DescobrirTipo AcessoOrigemStatica
 	TipoPrimitivo
 	TipoParaModeladores
 	TipoParaVariaveis
 	TipoParaAtributo
-	TipoParaObjeto
-	TipoParaFuncao
-	TipoParaExcessoesErro
-	TipoSemRetornoVazio
-	TipoAceitaQualquerDadoANY
+	TipoParaEstrutura
+	TiposParaValor
 	NovoTipoPersonalizado
+}
+
+type AcessoOrigemStatica struct {
+	AcessarMembroDeForma string
+	Membro string
+	ExemploUso string
 }
 
 type TipoPrimitivo struct {
@@ -72,50 +82,36 @@ type TipoParaAtributo struct {
 	Atributo ModelTipo
 }
 
-type TipoParaObjeto struct {
+type TipoParaEstrutura struct {
 	Objeto ModelTipo 
+	Funcao ModelTipo
 	DataHora ModelTipo
 }
 
-type TipoParaFuncao struct {
-	Funcao ModelTipo
-}
-
-type TipoParaExcessoesErro struct {
+type TiposParaValor struct {
+	AceitaQualquerDadoANY ModelTipo
+	Vazio_Void ModelTipo
 	Indefinido ModelTipo
 	Nulo ModelTipo
 	Erro ModelTipo
 }
 
-type TipoSemRetornoVazio struct {
-	Vazio_Void ModelTipo
+type NovoTipoPersonalizado struct {
+	NovoTipoPersonalizado string
 }
-
-type TipoAceitaQualquerDadoANY struct {
-	AnyQualquerInterface ModelTipo
-}
-
-type NovoTipoPersonalizado struct {}
 
 type ModelTipo struct {
 	Nome string
 	TemNaLinguagem bool
+	ModeladorDeOrigem string
 	Keyword string
-	Conceito string
-	Representacao_PodeInstanciar string
+	Representacao_PodeInstanciar []string
 	ValorDefault_SeNadaForPassado string
 	Exemplo string
 }
 
 type RegrasDaLinguagem struct {
 	ObrigatorioPontoeVirgulaACadaSentenca bool
-}
-
-type Arquivos struct {
-	RodarArquivo string
-}
-type ComandosDeSaida struct {
-	ViaConsole string
 }
 
 type Variaveis struct {
@@ -129,6 +125,3 @@ type PropsConceitoVariavel struct {
 	Sinonimos []string
 }
 
-type Descobertas struct {
-	DescobrirValorViaConsole string
-}
