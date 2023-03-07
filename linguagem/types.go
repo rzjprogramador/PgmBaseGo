@@ -1,10 +1,5 @@
 package linguagem
 
-import (
-	"github.com/rzjprogramador/PgmBase/utils"
-)
-
-
 type Linguagem struct{
 	Nome string
 	EntradaSaidaDadosByLinguagem
@@ -136,16 +131,3 @@ type PropsConceitoVariavel struct {
 type Descobertas struct {
 	DescobrirValorViaConsole string
 }
-
-func NewLinguagem(l Linguagem) *Linguagem{
-	return &l
-}
-
-func ExecuteLinguagem(l Linguagem) {
-	utils.ShowObject(l)
-}
-
-func MainLinguagem() {
-	ExecuteLinguagem(LinguagemDart)
-}
-
