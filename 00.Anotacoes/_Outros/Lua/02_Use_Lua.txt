@@ -1,0 +1,2 @@
+
+Rodar_Arquivo: "lua <arquivo.extensao>",
