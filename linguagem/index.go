@@ -9,7 +9,6 @@ type Linguagem struct{
 	Nome string
 	EntradaSaidaDadosByLinguagem
 	TiposDeDados
-	
 	Regras
 	Arquivos
 	ComandosDeSaida
@@ -142,8 +141,8 @@ func NewLinguagem(l Linguagem) *Linguagem{
 	return &l
 }
 
-func ExecuteLinguagem(l Linguagem) *Linguagem{
-	return utils.ShowObject(l)
+func ExecuteLinguagem(l Linguagem) {
+	utils.ShowObject(l)
 }
 
 func MainLinguagem() {
