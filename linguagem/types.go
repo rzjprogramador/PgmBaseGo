@@ -4,7 +4,7 @@ type Linguagem struct{
 	Nome string
 	EntradaSaidaDadosByLinguagem
 	TiposDeDados
-	Regras
+	RegrasDaLinguagem
 	Arquivos
 	ComandosDeSaida
 	Variaveis
@@ -74,6 +74,7 @@ type TipoParaAtributo struct {
 
 type TipoParaObjeto struct {
 	Objeto ModelTipo 
+	DataHora ModelTipo
 }
 
 type TipoParaFuncao struct {
@@ -106,7 +107,7 @@ type ModelTipo struct {
 	Exemplo string
 }
 
-type Regras struct {
+type RegrasDaLinguagem struct {
 	ObrigatorioPontoeVirgulaACadaSentenca bool
 }
 

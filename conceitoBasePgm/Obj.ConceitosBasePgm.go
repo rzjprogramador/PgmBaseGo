@@ -1,8 +1,7 @@
 package conceitoBasePgm
 
 var ConceitosBasePgm_Obj = ConceitosBasePgm{
-	Inicio_PeloTipoValorPreenchido: `tudo comeca em um tipo de valor que vou definir o tipo de valor que vou deixar preencher  ::ValorDeUmTipo
-	todo ValorDeUmTipo é instanciado guardado em uma variavel`,
+	Inicio_PeloTipoValorPreenchido: `tudo comeca em um tipo que vou deixar preencher como valor  ::ValorDeUmTipo ... todo ValorDeUmTipo é instanciado guardado em uma variavel`,
 
 	Declaracao: `registro que existe reserva um espaco denominado na memoria é a assinatura da Instanciacao , todas declaracoes sao semelhantes a assinatura de uma variavel o que muda é o Tipo que podera ser guardado , o delimitador/isolador e parametro/variavel de dependencia ex: funcao seus isoladores de param sao (), arrayLista tem linguagem que é [] ou {}, e algumas tem palavraChaveKeyword outras limguagens nao.`,
 
