@@ -13,6 +13,8 @@ func ExecuteLinguagem(l Linguagem) {
 }
 
 func MainLinguagem() {
+	
+	ExecuteLinguagem(Linguagem_Golang)
 	ExecuteLinguagem(LinguagemDart)
 }
 

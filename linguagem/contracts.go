@@ -19,6 +19,9 @@ type ComandosDeSaida struct {
 
 type EntradaSaidaDadosByLinguagem struct{
 	TemEscopoDeEntradaESaidaPrincipal bool
+	LocalArquivoDeEntradaESaidaPrincipal string
+	ArquivoDeEntradaESaidaPrincipal string
+	QualPacoteNameSpaceDeEntradaESaidaPrincipal string
 	QualEscopoDeEntradaESaidaPrincipal string
 }
 
@@ -47,35 +50,13 @@ type TipoPrimitivo struct {
 	Numeros	ModelTipoNumeros
 }
 
-type ModelTipoTexto struct {
-	Keyword string
-	Representacao_PodeInstanciar string
-	ValorDefault_SeNadaForPassado string
-	Exemplo string
-	RepresentacoesTexto AcoesTexto
-	
-}
-
-type AcoesTexto struct {
-	PularLinhas string
-	Interpolar_Variavel_Em_Texto string
-	Interpolar_ObjetoFuncao_Em_Texto string
-	Caracteres_Especiais []string
-	EscaparCaracteresEspeciaisEDeConflito string
-}
-
-type ModelTipoNumeros struct {
-	QualquerNumero ModelTipo
-	NumeroInteiro ModelTipo
-	NumeroDecimal ModelTipo
-}
-
 type TipoParaModeladores struct {
 	Modelador ModelTipo
 }
 
 type TipoParaVariaveis struct {
-	Variavel ModelTipo
+	LivreParaReescrita ModelTipo
+	ConstanteNaoPodeSerReescrita ModelTipo
 }
 
 type TipoParaAtributo struct {
@@ -102,12 +83,42 @@ type NovoTipoPersonalizado struct {
 
 type ModelTipo struct {
 	Nome string
+	Significado string
 	TemNaLinguagem bool
+	Conceito string
 	ModeladorDeOrigem string
 	Keyword string
 	Representacao_PodeInstanciar []string
 	ValorDefault_SeNadaForPassado string
+	CriarNovo string
+	EditarNovo string
 	Exemplo string
+}
+
+type ModelTipoTexto struct {
+	Keyword string
+	Representacao_PodeInstanciar string
+	ValorDefault_SeNadaForPassado string
+	CriarNovo string
+	EditarNovo string
+	Exemplo string
+	AcoesTexto
+	
+}
+
+type AcoesTexto struct {
+	PularLinhas string
+	Interpolar_Variavel_Em_Texto string
+	Interpolar_ObjetoFuncao_Em_Texto string
+	Concatenar_Variaveis_Com_Texto string
+	Caracteres_Especiais []string
+	EscaparCaracteresEspeciaisEDeConflito string
+}
+
+type ModelTipoNumeros struct {
+	QualquerNumero ModelTipo
+	NumeroInteiro ModelTipo
+	NumeroDecimal ModelTipo
 }
 
 type RegrasDaLinguagem struct {
