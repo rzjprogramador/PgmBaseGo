@@ -42,7 +42,7 @@ var LinguagemDart = Linguagem{
 			Texto: ModelTipoTexto{
 				Keyword: "String",
 				Representacao_PodeInstanciar: "String",
-				ValorDefault_SeNadaForPassado: "null",s
+				ValorDefault_SeNadaForPassado: "null",
 				Exemplo: `string texto = "Meu texto"`,
 
 			}, // ModelTipoTexto

@@ -1,7 +1,7 @@
 package linguagem
 
 import (
-	"github.com/rzjprogramador/PgmBase/utils"
+	"github.com/rzjprogramador/PgmBaseGo/utils"
 )
 
 func NewLinguagem(l Linguagem) *Linguagem{
