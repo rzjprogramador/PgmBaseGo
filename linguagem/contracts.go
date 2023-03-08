@@ -44,7 +44,7 @@ type TipoPrimitivo struct {
 	Boleano ModelTipo
 	Texto ModelTipoTexto
 	CaractereUnico ModelTipo
-	Numeros	
+	Numeros	ModelTipoNumeros
 }
 
 type ModelTipoTexto struct {
@@ -52,11 +52,11 @@ type ModelTipoTexto struct {
 	Representacao_PodeInstanciar string
 	ValorDefault_SeNadaForPassado string
 	Exemplo string
-	RepresentacoesTexto RepresentacaoTexto
+	RepresentacoesTexto AcoesTexto
 	
 }
 
-type RepresentacaoTexto struct {
+type AcoesTexto struct {
 	PularLinhas string
 	Interpolar_Variavel_Em_Texto string
 	Interpolar_ObjetoFuncao_Em_Texto string
@@ -64,7 +64,7 @@ type RepresentacaoTexto struct {
 	EscaparCaracteresEspeciaisEDeConflito string
 }
 
-type Numeros struct {
+type ModelTipoNumeros struct {
 	QualquerNumero ModelTipo
 	NumeroInteiro ModelTipo
 	NumeroDecimal ModelTipo
