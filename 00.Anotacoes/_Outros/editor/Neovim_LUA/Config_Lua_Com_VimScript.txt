@@ -1,0 +1,15 @@
+# Config_Lua_Com_VimScript:
+
+Definindo_Leader_TeclaPrincipal: `
+  -- Apelide a variavel map :: 
+  local map = vim.api.nvim_set_keymap
+
+  -- Mappings -- Definindo ESPAÇO como leader
+  map('n', '<Space>', '', {})
+  g.mapleader = ' '
+  options = { noremap = true }
+
+  -- ANTIGO DEFININDO A VIRGULA COMO ERA -- mapleader key 
+  g.mapleader = ','
+`,
+

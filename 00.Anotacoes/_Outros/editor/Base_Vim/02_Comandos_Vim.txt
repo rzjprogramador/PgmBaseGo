@@ -3,6 +3,8 @@ arquivos:
   Abrir_Arquivo_Dentro_De_Editor_Ja_EmUso: "usar o de open ex: :o arquivo.extensao",
   adicionar_arquivo_novo_pelo_sidebar_nerdtree: "tecla 'a' de adicionar e digite o nome do arquivo"
 
+ListaDeComandos: https://docs.aws.amazon.com/pt_br/cloud9/latest/user-guide/keybindings-vim-windows-linux.html
+
 navegacao_abas:
  novas_abas: "```:tabnew arquivo.extensao``` // se o arquivo nao existir vai ser criado",
  fechar_aba: "```:tabclose arquivo.txt```",
