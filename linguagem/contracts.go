@@ -51,7 +51,7 @@ type TipoPrimitivo struct {
 }
 
 type TipoParaModeladores struct {
-	Modelador ModelTipo
+	ModeladorNovoTipoPersonalizado ModelTipo
 }
 
 type TipoParaVariaveis struct {

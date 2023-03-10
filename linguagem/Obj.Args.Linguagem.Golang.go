@@ -138,9 +138,9 @@ var Linguagem_Golang = Linguagem{
 		}, // TipoPrimitivo
 
 		TipoParaModeladores: TipoParaModeladores{
-			Modelador: ModelTipo{
+			ModeladorNovoTipoPersonalizado: ModelTipo{
 				Nome: "struct",
-				Significado: "estrutura",
+				Significado: "Modelador Para Novo Tipo Personalizado",
 				TemNaLinguagem: true,
 				Conceito: "struct seria em outras linguagens uma class static que gera objetos.",
 				ModeladorDeOrigem: "class static",
