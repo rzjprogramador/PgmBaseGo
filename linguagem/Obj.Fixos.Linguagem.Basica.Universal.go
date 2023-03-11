@@ -3,7 +3,7 @@ package linguagem
 var Linguagem_Basica_Universal = Linguagem{
 	Nome: "Linguagem_Basica_Universal",
 	Arquivos: Arquivos{
-		RodarArquivo: `deno run <endereco/arquivo.go>`,
+		RodarArquivo: `deno run <endereco/arquivo.extensao>`,
 	}, // Arquivos
 
 	EntradaSaidaDadosByLinguagem: EntradaSaidaDadosByLinguagem{

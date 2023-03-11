@@ -32,4 +32,5 @@ instalar_pacote_zipado:
   exemplo: "``` ./studio.sh ```",
 
  ---
-
+Desinstalar_Uninstall:
+  Desinstalr_Pacotes_Instalados_Pelo_Apt: `sudo apt-get --purge remove <PACOTE>`,

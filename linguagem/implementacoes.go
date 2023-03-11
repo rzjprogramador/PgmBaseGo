@@ -14,6 +14,7 @@ func ExecuteLinguagem(l Linguagem) {
 
 func MainLinguagem() {
 	
+	ExecuteLinguagem(Linguagem_Basica_Universal)
 	ExecuteLinguagem(Linguagem_Golang)
 	ExecuteLinguagem(LinguagemDart)
 }
