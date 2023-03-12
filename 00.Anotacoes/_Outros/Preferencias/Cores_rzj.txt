@@ -2,3 +2,6 @@ links cores rzj: https://docs.google.com/spreadsheets/d/1RdeAsKfs3_WZjq4CQQkbTv-
 
 Melhores_Darks:
   Nome: "RzjDark1", Hex: "#090c10",
+
+Clean_Comentarios:
+  Nome: "ComentarioDracula", Hex: "#525f89",
