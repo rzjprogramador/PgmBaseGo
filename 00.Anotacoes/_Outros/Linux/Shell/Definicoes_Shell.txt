@@ -1,3 +1,0 @@
-
-Definir_Shell_Principal:
-  Bash_Como_Principal: `chsh -s /bin/bash`,
