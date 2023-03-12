@@ -1,0 +1,4 @@
+links cores rzj: https://docs.google.com/spreadsheets/d/1RdeAsKfs3_WZjq4CQQkbTv-viOE9hTv0hJcGc3uYiO8/edit#gid=1799305901
+
+Melhores_Darks:
+  Nome: "RzjDark1", Hex: "#090c10",
