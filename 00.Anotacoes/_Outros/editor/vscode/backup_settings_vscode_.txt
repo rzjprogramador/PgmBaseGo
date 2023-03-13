@@ -30,6 +30,7 @@
   "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": false, // config abrir somente uma aba de trabalho
   "workbench.list.smoothScrolling": true,
   "workbench.colorTheme": "OM Theme (Night Owl Italic)",
 
