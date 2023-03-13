@@ -1,6 +1,6 @@
 package tecnica
 
-import "github.com/rzjprogramador/PgmBase/utils"
+import "github.com/rzjprogramador/PgmBaseGo/utils"
 
 type Tecnica struct {
 	Nome string
@@ -8,16 +8,10 @@ type Tecnica struct {
 	Exemplo string
 }
 
-func newTecnica(t Tecnica) Tecnica{
-	return t
+func newTecnica(t Tecnica) *Tecnica{
+	return &t
 }
 
 func ExecuteTecnica() {
-	utils.ShowObject(newTecnica(fooTecnica))
-}
-
-var fooTecnica = Tecnica{
-	Nome: "nome da tecnica",
-	Tecnica: "tecnica em questao",
-	Exemplo: `exemplo da tecnica`,
+	utils.ShowObject(newTecnica(UseTipoDeDadoQuePrecisa))
 }
