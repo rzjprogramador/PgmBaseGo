@@ -1,10 +1,8 @@
 package main
 
-import (
-	"github.com/rzjprogramador/PgmBaseGo/linguagem"
-)
+import "github.com/rzjprogramador/PgmBaseGo/tecnica"
 
 
 func main() {
-	linguagem.MainLinguagem()
+	tecnica.ExecuteTecnica()
 }
