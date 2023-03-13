@@ -1,0 +1,8 @@
+POST {{host}}/hello-inicio
+Content-Type: application/json
+
+{
+    "nome": "5",
+    "email": "5@email.com",
+    "password": "1111"
+}
