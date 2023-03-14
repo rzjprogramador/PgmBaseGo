@@ -2,24 +2,19 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"os"
-	"github.com/joho/godotenv"
+	"reflect"
+	"strconv"
+
+	"github.com/rzjprogramador/PgmBaseGo/utils"
 	// "github.com/rzjprogramador/PgmBaseGo/tecnica"
 )
 
-
-
 func main() {
-	// tecnica.ExecuteTecnica()
-
-	// Acessando variavelDeAmbiente definida no arquivo .env
-
-	// 1- carregar variavel - verificando se tem erro
-	err := godotenv.Load()
-  if err != nil {
-    log.Fatal("Error loading .env file")
-  }
-	// 2- usar variavelCarregada - passando a variavel como string
-	fmt.Println(os.Getenv("TEST"))
+	test := utils.UseLoadEnv("TEST")
+	nome := utils.UseLoadEnv("NOME")
+	idade, _ := strconv.Atoi(utils.UseLoadEnv("IDADE"))
+	tipoIdade := reflect.TypeOf(idade)
+	
+	fmt.Println(test, nome, idade)
+	fmt.Println(tipoIdade)
 }
